@@ -1,6 +1,7 @@
 FROM teddysun/xray
 LABEL maintainer="https://github.com/jianyuann"
 
+ADD index.html /
 COPY config.json /etc/xray/config.json
 COPY xray.sh /xray.sh
 RUN chmod +x /xray.sh
